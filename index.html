@@ -1,3 +1,293 @@
-<h1>
-hello
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Aura</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0414;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0 16px 80px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 64px 16px 48px;
+    }
+
+    .logo-ring {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #c084fc, #7c3aed);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 0 40px rgba(192, 132, 252, 0.4);
+    }
+
+    .logo-ring svg { width: 36px; height: 36px; fill: white; }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #e9d5ff, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #110820;
+      border: 1px solid #1e1035;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #c084fc;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 .num {
+      background: rgba(192, 132, 252, 0.15);
+      border: 1px solid rgba(192, 132, 252, 0.3);
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #c084fc;
+    }
+
+    p { color: #cbd5e1; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 8px 0 12px;
+      padding: 0;
+    }
+
+    ul li {
+      color: #cbd5e1;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: #7c3aed;
+      font-size: 0.6rem;
+      top: 8px;
+    }
+
+    a { color: #c084fc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      background: rgba(192, 132, 252, 0.1);
+      border: 1px solid rgba(192, 132, 252, 0.25);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      color: #c084fc;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+
+    .updated {
+      text-align: center;
+      color: #475569;
+      font-size: 0.85rem;
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(192, 132, 252, 0.08));
+      border: 1px solid rgba(192, 132, 252, 0.25);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .contact-card p { color: #94a3b8; margin-bottom: 8px; }
+    .contact-card a {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="logo-ring">
+      <!-- person silhouette icon -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+      </svg>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">How Aura collects, uses, and protects your information</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <p>
+        Welcome to <strong style="color:#e2e8f0">Aura</strong>. We built this app for students to connect, vibe, and express themselves within their school community. Your privacy matters to us. This policy explains what data we collect, why we collect it, and how we handle it.
+      </p>
+      <p>
+        By using Aura, you agree to the practices described below. If you have any questions, reach out to us at the contact details at the bottom of this page.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">1</span> Information We Collect</h2>
+      <p><strong style="color:#e2e8f0">Information you provide directly:</strong></p>
+      <ul>
+        <li>Phone number (used for OTP verification and account identification)</li>
+        <li>First and last name</li>
+        <li>Username</li>
+        <li>Gender</li>
+        <li>Grade, school, and city</li>
+        <li>Profile photo (if you choose to upload one)</li>
+      </ul>
+      <p><strong style="color:#e2e8f0">Information generated by your activity:</strong></p>
+      <ul>
+        <li>Vibe votes you cast (anonymous — your identity is never revealed to the recipient)</li>
+        <li>Friend connections you make</li>
+        <li>Aura points and leaderboard rankings</li>
+        <li>Sparks and keys earned through activity</li>
+      </ul>
+      <p><strong style="color:#e2e8f0">Information collected automatically:</strong></p>
+      <ul>
+        <li>Device push notification token (for delivering notifications)</li>
+        <li>Basic usage data (e.g. app crashes, session events) for improving the service</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">2</span> How We Use Your Information</h2>
+      <ul>
+        <li>To create and manage your account</li>
+        <li>To match you with students in your school for Vibe sessions</li>
+        <li>To show your profile to other students at your school</li>
+        <li>To deliver push notifications about your Aura activity</li>
+        <li>To maintain leaderboards, friend lists, and school communities</li>
+        <li>To improve the app and fix bugs</li>
+        <li>To prevent abuse and enforce our community guidelines</li>
+      </ul>
+      <p>We do <strong style="color:#e2e8f0">not</strong> sell your personal information to third parties.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">3</span> Anonymity in Vibes</h2>
+      <p>
+        When another user receives a vibe vote, they are <strong style="color:#e2e8f0">never told who voted for them</strong>. We only reveal limited demographic context (e.g. "a girl in grade 10") without identifying you. Your identity as the voter is protected at all times.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">4</span> Data Sharing</h2>
+      <p>We use the following trusted third-party services to operate Aura:</p>
+      <p>
+        <span class="badge">Firebase (Google)</span>
+        <span class="badge">MSG91</span>
+      </p>
+      <ul>
+        <li><strong style="color:#e2e8f0">Firebase</strong> — used for push notifications (Firebase Cloud Messaging) and profile photo storage (Firebase Storage). Governed by <a href="https://firebase.google.com/support/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+        <li><strong style="color:#e2e8f0">MSG91</strong> — used to send OTP verification SMS. Governed by <a href="https://msg91.com/privacy" target="_blank">MSG91's Privacy Policy</a>.</li>
+      </ul>
+      <p>These services only receive the data necessary to perform their function. We do not share your data with advertisers or data brokers.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">5</span> Profile Photos</h2>
+      <p>
+        If you upload a profile photo, it is stored securely in Firebase Storage and is visible to other students within your school on Aura. You can update or remove your profile photo at any time from the Profile screen within the app.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">6</span> Data Retention</h2>
+      <p>
+        We retain your data for as long as your account is active. If you wish to delete your account and all associated data, please contact us at the email below and we will process your request within 30 days.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">7</span> Children and Minors</h2>
+      <p>
+        Aura is designed for high school students. If you are under 13, please do not use this app without parental consent. We do not knowingly collect personal information from children under 13. If we become aware of such data being collected, we will delete it promptly.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">8</span> Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your account and data</li>
+        <li>Withdraw consent at any time by discontinuing use of the app</li>
+      </ul>
+      <p>To exercise any of these rights, contact us using the details below.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">9</span> Security</h2>
+      <p>
+        We take reasonable technical and organisational measures to protect your data, including encrypted transit (HTTPS), secure storage, and access controls. No system is 100% secure, but we are committed to keeping your data safe.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">10</span> Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy from time to time. When we do, we will update the "Last updated" date below. Continued use of Aura after changes are posted constitutes your acceptance of the updated policy.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <p>Questions or requests? Get in touch.</p>
+      <a href="mailto:com.infinite.aura@gmail.com">com.infinite.aura@gmail.com</a>
+    </div>
+
+    <p class="updated">Last updated: April 2025 &nbsp;·&nbsp; Aura</p>
+
+  </div>
+
+</body>
+</html>
